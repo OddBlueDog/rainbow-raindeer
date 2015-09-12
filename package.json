@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:js": "browserify js/main.js > dist/js/bundle.js",
+    "build:js": "browserify js/main.js > dist/js/bundle.js && uglifyjs dist/js/bundle.js -c -o dist/js/bundle.js",
     "watch:css": "node-sass --watch sass/main.scss -o dist/css",
     "build:css": "node-sass sass/main.scss > dist/css/main.css && npm run build:postcss",
     "build:postcss": "postcss --use autoprefixer dist/css/main.css -o dist/css/main.css",
@@ -29,6 +29,7 @@
     "browserify-shim": "^3.8.10",
     "clean-css": "^3.4.1",
     "node-sass": "^3.3.2",
-    "postcss-cli": "^2.1.0"
+    "postcss-cli": "^2.1.0",
+    "uglify-js": "^2.4.24"
   }
 }
