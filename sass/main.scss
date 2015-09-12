@@ -1,0 +1,22 @@
+@import 'bootstrap-variables';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+//base
+@import 'base/base';
+@import 'base/typography';
+
+//utils
+@import 'utils/mixins';
+
+// components
+@import 'components/parallax-background';
+@import 'components/nav-item';
+@import 'components/nav-holder';
+@import 'components/body-nav';
+@import 'components/jumbotron';
+@import 'components/hero-splash';
+@import 'components/grid';
+@import 'components/section';
+@import 'utils/helpers';
+@import 'components/panel';
+@import 'components/button';
