@@ -1,0 +1,73 @@
+.jumbotron {
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 0;
+
+    &--bg1 {
+
+        // Fixed-position background image
+        &::before {
+            content: ' ';
+            position: absolute; // instead of background-attachment
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #9D50BB 10%, #6E48AA 90%);
+            /* W3C */
+            background-size: cover;
+            opacity: 0.6;
+            z-index: -1;
+        }
+    }
+
+    &--bg2 {
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #fe8c00 10%, #f83600 90%);
+            /* W3C */
+            background-size: cover;
+            opacity: 0.4;
+            z-index: -1;
+        }
+    }
+
+    &--bg3 {
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #360033 10%, #0b8793 90%);
+            /* W3C */
+            background-size: cover;
+            opacity: 0.4;
+            z-index: -1;
+        }
+    }
+
+    &--bg4 {
+        &::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, #FDFC47 10%, #24FE41 90%);
+            /* W3C */
+            background-size: cover;
+            opacity: 0.4;
+            z-index: -1;
+        }
+    }
+}

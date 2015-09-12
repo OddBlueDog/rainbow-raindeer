@@ -1,0 +1,34 @@
+{
+  "name": "html5-boilerplate_v5.2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "browserify js/main.js > dist/js/bundle.js",
+    "watch:css": "node-sass --watch sass/main.scss -o dist/css",
+    "build:css": "node-sass sass/main.scss > dist/css/main.css && npm run build:postcss",
+    "build:postcss": "postcss --use autoprefixer dist/css/main.css -o dist/css/main.css",
+    "build:image": "cp -r img/ dist",
+    "build:cssclean": "cleancss -o dist/css/main.css dist/css/main.css",
+    "build:font": "cp -r font/ dist",
+    "build": "npm run build:css && npm run build:cssclean && npm run build:js && npm run build:image && npm run build:font"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.5",
+    "jquery": "^2.1.4",
+    "skrollr": "^0.6.26",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "autoprefixer-core": "^5.2.1",
+    "browserify": "^11.0.1",
+    "browserify-shim": "^3.8.10",
+    "clean-css": "^3.4.1",
+    "node-sass": "^3.3.2",
+    "postcss-cli": "^2.1.0"
+  }
+}

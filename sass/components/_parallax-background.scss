@@ -1,0 +1,13 @@
+.parallax-background {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    transform: translate3d(0,0,0);
+    top: 0;
+    z-index: -9;
+    overflow: hidden;
+    background: url("../img/jumbotron-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 100%;
+}

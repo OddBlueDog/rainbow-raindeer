@@ -1,0 +1,28 @@
+.nav-item {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #1abc9c;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 0 $grid-gutter-width/2;
+    transition: all 0.3s ease;
+    margin-bottom: $grid-gutter-width;
+
+    &--hoverable {
+        cursor: pointer;
+
+        &:hover {
+            background-color: #16a085;
+            box-shadow: 0 0 9px 0 rgba(107,107,107,1);
+        }
+    }
+
+    i {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+}
